@@ -1,0 +1,43 @@
+
+body{
+				  font-family: 'Montserrat', sans-serif;
+				  margin:0;
+				  text-align: center;
+}
+
+.contain {
+				  display: flex;
+				  justify-content: center;
+				  align-items: center;
+				  align-content: center;
+				  flex-wrap: wrap;
+				  width: 80vw;
+				  margin: 0 auto;
+				  min-height: 100vh;
+
+}
+
+
+button{
+				  padding: 30px;
+				  text-align: center;
+				  text-transform: uppercase;
+				  transition: 0.5s;
+				  background-size: 200% auto;
+				  color: white;
+				 /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+				  box-shadow: 0 0 20px #eee;
+				  border-radius: 10px;
+				  background-color: #A5B8DA;  
+	
+}	
+	
+.mouseovered{
+
+				color: black;
+}
+
+
+#myBtn {
+	position: absolute;
+}
