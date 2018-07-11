@@ -2,45 +2,46 @@
 <!DOCTYPE html>
 
 <html>
-
-<link rel="stylesheet" href="style_.css"/>
-<head>
-	<title>Run Away 💃💃 Bride</title>
-</head>
-
-<h1>Elusive Button</h1>
-
 <body>
 
-	<p>
-		This button will run away Like Bride !!!!
-	</p>
-	<h3 id="-">💃💃💃</h3>
+	<link rel="stylesheet" href="style_.css"/>
 
+
+
+	
+
+	<title>Run Away 💃💃 Bride</title>
+
+
+	<div class="all">
+		<h1>Elusive Button</h1>
+
+
+		<h2>
+			This button will run away Like Bride !!!!
+		</h2>
+		<h2 id="-">💃💃💃</h2>
+
+	</div>
 
 	<div class="contain" title="Surprise">
-
 		<button id="myBtn">
 
 			Try to Click me :) 
-			
+
 		</button>
 
-		
 
-
-
-
-
-		
 		<script>
 
+
 			const button = document.getElementById('myBtn');
+			// let tex = document.getElementsByClassName('all');
 
 			let countHover = 0
 
 			function randomPlace(){
-				
+
 				let randX = Math.floor(Math.random() * (window.innerWidth - 100));
 				let randY = Math.floor(Math.random() * (window.innerHeight - 100));
 
@@ -50,9 +51,17 @@
 				countHover++
 			}
 
+
 			// all these above is i dont wanna change
 
 			if (window.innerWidth < 1000) {
+				
+				button.style.padding = "55px";
+				button.style.fontSize = '30px';
+				// tex.style.fontSize = '300px' ;
+				
+
+
 				button.onclick = function() {
 
 					if (countHover <= 10) {
@@ -109,8 +118,7 @@
 		</script>
 
 		
-		<br>
-
+		
 
 	</div>
 
