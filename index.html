@@ -1,13 +1,14 @@
-<!DOCTYPE html>
+
+			<!DOCTYPE html>
 
 <html>
 
-		<link rel="stylesheet" href="style_.css"/>
+		<link rel="stylesheet" href="C:\Users\Asus\Desktop\CODE DONE\Elusivebutton.css"/>
 <head>
 		<title>Run Away 💃💃 Bride</title>
 </head>
 
-		<h1>Vixtrum ' s achievement</h1>
+		<h1>Elusive Button</h1>
 
 <body>
 
@@ -26,59 +27,17 @@
 		</button>
 
 		
-<!-- 
-		<script>
- 
-			function randomColor(){
-				const r = Math.floor(Math.random() * 255);
-				const g = Math.floor(Math.random() * 255);
-				const b = Math.floor(Math.random() * 255);
-
-				return 'rgb(' + r + ', ' + g + ',' + b +')'
-
-
-			}
-
-
-
-			const button = document.getElementById(
-				'myBtn');
-			const countSpan = document.getElementById('click-count')
-
-
-				// THIS IS MAKING CLICK COUNT!
-				let clickCount = 0;
-
-
-			button.onclick = function(){
-				// window.alert('I GOT CLICKED!!!');
-				 clickCount = clickCount + 1;
-				 countSpan.innerHTML = clickCount;
-				 console.log('CLICKED' , clickCount);
-
-				 // randomise color over here!
-				 button.style.backgroundColor = randomColor();
-
-				
-			}
-
-			button.onmouseover =function(){
-				button.classList.add('mouseovered')
-				console.log('mouseover!!')
-			}
-
-			button.onmouseout = function(){
-				button.classList.remove('mouseovered')
-			}
 
 
 
 
-	</script> -->
+
+	
 	<script>
+			const button = document.getElementById('myBtn');
 
 			let countHover = 0
- 
+
 			function randomPlace(){
 					
 			    let randX = Math.floor(Math.random() * (window.innerWidth - 100));
@@ -90,44 +49,75 @@
 				countHover++
 			}
 
+			// all these above is i dont wanna change
 
-			const button = document.getElementById(
-				'myBtn');
+			if (window < 1000) {
+				button.onclick = function() {
+
+					if (countHover <= 10) {
+
+						randomPlace()
+					}
+
+					 else {
+
+						window.alert('I GOT CLICKED!!!');
+						location.href ="https://youtu.be/VaBer-EXyYU"; 
+					}
+
+					// all contain inside a if else take note
+			}
+
+
+			}
+
+			 else {
+
+				button.onmouseover = function(){
+
+					// button.classList.add('mouseovered')
+
+					if (countHover <= 10) {
+						randomPlace()
+					}
+					
+				}
+
+
+
+				button.onclick = function(){
+
+					window.alert('I GOT CLICKED!!!');
+					location.href ="https://youtu.be/VaBer-EXyYU"; 
+					 // clickCount = clickCount + 1;
+					 // countSpan.innerHTML = clickCount;
+					 // console.log('CLICKED' , clickCount);
+					 
+				}
+
+
+			}
+ 
+
+
 					
 			// const countHover = document.getElementById('hover-count')
 
 
 
-			button.onmouseover = function(){
-				// button.classList.add('mouseovered')
-				if (countHover <= 10) {
-					randomPlace()
-				}
-				
-			}
+	</script>
+
+	
+	<br>
+
+
+	</div>
 
 
 
-			button.onclick = function(){
-				window.alert('I GOT CLICKED!!!');
-				location.href ="https://youtu.be/VaBer-EXyYU"; 
-				 // clickCount = clickCount + 1;
-				 // countSpan.innerHTML = clickCount;
-				 // console.log('CLICKED' , clickCount);
-				 
-			}
-</script>
-<br>
-
-
-</div>
-
-
-		
-
-<!-- DONE -->
 
 </body>
 </html>
 
 			
+	
