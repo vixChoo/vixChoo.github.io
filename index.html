@@ -1,29 +1,29 @@
 
-			<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html>
 
-		<link rel="stylesheet" href="C:\Users\Asus\Desktop\CODE DONE\Elusivebutton.css"/>
+<link rel="stylesheet" href="style.css"/>
 <head>
-		<title>Run Away 💃💃 Bride</title>
+	<title>Run Away 💃💃 Bride</title>
 </head>
 
-		<h1>Elusive Button</h1>
+<h1>Elusive Button</h1>
 
 <body>
 
-		<p>
-			  This button will run away Like Bride !!!!
-		</p>
-		<h3 id="-">💃💃💃</h3>
+	<p>
+		This button will run away Like Bride !!!!
+	</p>
+	<h3 id="-">💃💃💃</h3>
 
 
 	<div class="contain" title="Surprise">
 
 		<button id="myBtn">
 
-				Try to Click me :) 
-		
+			Try to Click me :) 
+			
 		</button>
 
 		
@@ -32,16 +32,16 @@
 
 
 
-	
-	<script>
+		
+		<script>
 			const button = document.getElementById('myBtn');
 
 			let countHover = 0
 
 			function randomPlace(){
-					
-			    let randX = Math.floor(Math.random() * (window.innerWidth - 100));
-			    let randY = Math.floor(Math.random() * (window.innerHeight - 100));
+				
+				let randX = Math.floor(Math.random() * (window.innerWidth - 100));
+				let randY = Math.floor(Math.random() * (window.innerHeight - 100));
 
 				button.style.top = randY + "px"
 				button.style.left = randX + "px"
@@ -59,19 +59,19 @@
 						randomPlace()
 					}
 
-					 else {
+					else {
 
 						window.alert('I GOT CLICKED!!!');
 						location.href ="https://youtu.be/VaBer-EXyYU"; 
 					}
 
 					// all contain inside a if else take note
-			}
+				}
 
 
 			}
 
-			 else {
+			else {
 
 				button.onmouseover = function(){
 
@@ -93,22 +93,22 @@
 					 // countSpan.innerHTML = clickCount;
 					 // console.log('CLICKED' , clickCount);
 					 
+					}
+
+
 				}
+				
 
 
-			}
- 
-
-
-					
+				
 			// const countHover = document.getElementById('hover-count')
 
 
 
-	</script>
+		</script>
 
-	
-	<br>
+		
+		<br>
 
 
 	</div>
@@ -119,5 +119,4 @@
 </body>
 </html>
 
-			
-	
+
