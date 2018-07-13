@@ -1,91 +1,101 @@
-
-
 body{
-	font-family: 'Montserrat', sans-serif;
-	margin:0;
+
+	background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+	/*background-image: linear-gradient( 135deg, #81FFEF 10%, #F067B4 100%);*/
+
+}	
+select {
+	padding:15px;
+	margin-bottom: 10px;
+	
+	border-radius:4px;
+	
+	box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+	background: #f8f8f8;
+	color:#888;
+	border:none;
+	outline:none;
+	/*when u press button will be like blue line not nice!*/
+	cursor:pointer;
 	text-align: center;
-	/*max-width: 750px;*/
-
-}
-
-/*@media(min-width: 768px){
-	body{
-		
-		font-size: 60px;
-/*		padding: 60px;
-*/
-
-/*.all{
-
-	font-size: 40px;
-}
-*/
-
-
-.contain {
-	display: flex;
-	justify-content: center;
-	/*align-items: center;*/
-	/*align-content: center;*/
-	flex-wrap: wrap;
-	width: 80vw;
-	margin: 0 auto;
-	min-height: 100vh;
-
-
+	font-size: 30px;
 }
 
 
+.minContainer {
+	padding: 20px;
+	padding-right: 30px;
+	
+}
+
+
+.td {
+
+	border: 2px solid #cccccc;
+	font-size:30px;
+	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+	color:rgb(99, 110, 114);
+	line-height: 1.428571429;
+	width: 60px;
+	height: 70px;
+	min-width: 70px;
+	max-width: 100px;
+	min-height: 70px;
+	max-height: 100px;
+	text-align: center;
+	border-radius: 10px 10px 10px 10px;
+}
+
+.X{
+	background-color:rgb(253, 121, 168,0.5);
+	
+}
+
+.O{
+	background-color: rgb(162, 155, 254,0.5);
+}
 
 
 button{
-	padding: 30px;
+
+	background-color: rgb(99, 110, 114,0.2);
+	border:none;
+	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+	padding: 0;
+	box-shadow: 0 2px 0 #ccc, 0 0px #fff inset;
+	border-radius:4px;
+}
+
+
+button p {
+	font-family: 'Josefin Slab', serif;
+	font-size: 20px;
+	color:#888;
+	padding-left: 15px;
+	padding-right: 15px;
+	cursor: pointer;
+	outline: none;
+}
+
+button:hover{
+	transition: all 0.4s;
+	transform: translate(0px,-10px);
+}
+
+
+
+
+footer{
 	text-align: center;
-	text-transform: uppercase;
-	transition: 0.5s;
-	background-size: 200% auto;
-	color: white;
-	/* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
-	box-shadow: 0 0 20px #eee;
-	border-radius: 10px;
-	background-color: #A5B8DA;  
-	
-}	
+	color:#888;
 
-
-
-.mouseovered{
-
-	color: black;
 }
 
 
-#myBtn {
-	position: absolute;
+h2{
+
+	font-family: 'Josefin Slab', serif;
+	color:#888;
 }
-
-/*.all{
-	font-size: 50px;
-	}*/
-
-
-	@media(max-width: 1000px ){
-		body{
-
-			font-size: 50px;
-
-		}
-	}
-
-
-
-
-
-
-
-
-
-
-
 
 

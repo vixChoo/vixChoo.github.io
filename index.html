@@ -1,131 +1,51 @@
-
 <!DOCTYPE html>
 
-<html>
-<body>
 
-	<link rel="stylesheet" href="style_.css"/>
+<title>Tic Tac Toe</title>
 
 
+<!-- Link to font of about-me -->
+<link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
 
-	
+<link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
 
-	<title>Run Away 💃💃 Bride</title>
-
-
-	<div class="all">
-		<h1>Elusive Button</h1>
-
-
-		<h2>
-			This button will run away Like Bride !!!!
-		</h2>
-		<h2 id="-">💃💃💃</h2>
-
-	</div>
-
-	<div class="contain" title="Surprise">
-		<button id="myBtn">
-
-			Try to Click me :) 
-
-		</button>
-
-
-		<script>
-
-
-			const button = document.getElementById('myBtn');
-			// let tex = document.getElementsByClassName('all');
-
-			let countHover = 0
-
-			function randomPlace(){
-
-				let randX = Math.floor(Math.random() * (window.innerWidth - 100));
-				let randY = Math.floor(Math.random() * (window.innerHeight - 100));
-
-				button.style.top = randY + "px"
-				button.style.left = randX + "px"
-
-				countHover++
-			}
-
-
-			// all these above is i dont wanna change
-
-			if (window.innerWidth < 1000) {
-				
-				button.style.padding = "55px";
-				button.style.fontSize = '30px';
-				// tex.style.fontSize = '300px' ;
-				
-
-
-				button.onclick = function() {
-
-					if (countHover <= 10) {
-
-						randomPlace()
-					}
-
-					else {
-
-						window.alert('I GOT CLICKED!!!');
-						location.href ="https://youtu.be/VaBer-EXyYU"; 
-					}
-
-					// all contain inside a if else take note
-				}
-
-
-			}
-
-			else {
-
-				button.onmouseover = function(){
-
-					// button.classList.add('mouseovered')
-
-					if (countHover <= 10) {
-						randomPlace()
-					}
-					
-				}
-
-
-
-				button.onclick = function(){
-
-					window.alert('I GOT CLICKED!!!');
-					location.href ="https://youtu.be/VaBer-EXyYU"; 
-					 // clickCount = clickCount + 1;
-					 // countSpan.innerHTML = clickCount;
-					 // console.log('CLICKED' , clickCount);
-					 
-					}
-
-
-				}
-				
-
-
-				
-			// const countHover = document.getElementById('hover-count')
-
-
-
-		</script>
-
-		
-		
-
-	</div>
+<link rel="stylesheet"  href="style_.css"/>
 
 
 
 
-</body>
-</html>
+<body onload="fnLoad()">
 
 
+	<center>
+		<div class="container">
+			
+			<div>
+				<select id="grid">
+				</select>
+				<h2>Player X : <span id="player-x"></span>  ||   Player O : <span id="player-o"></span></h2>
+			</div>
+			<div class="minContainer">
+				<table class="row" id="game"></table>
+			</div>
+			<button name="NewGame" class="newGame" value="Start a New Game" onClick="fnNewGame()"><p>Start a New Game</p></button
+			</div>
+		</center>
+
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<footer>
+			&copy;Vixtrum Choo.Inspired by StackExchange.
+		</footer>
+
+		<script src="script.js"></script>
+	</body>
+	</html>
